@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/multiproyect/',
+  base: 'https://github.com/rlara0319/multiproyect/',
   plugins: [react()],
 })
