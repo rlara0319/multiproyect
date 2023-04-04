@@ -25,7 +25,7 @@ export default function Memotest() {
         setGuessed((guessed) => guessed.concat(selected));
       }
 
-      setTimeout(() => setSelected([]), 500);
+      setTimeout(() => setSelected([]), 700);
     }
   }, [selected]);
 
