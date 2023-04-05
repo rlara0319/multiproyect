@@ -1,15 +1,17 @@
-import { Routes, Route } from "react-router-dom";
 import Memotest from "./screens/Memotest";
 import WordsPerMinute from "./screens/WordsPerMinute";
 import Pokemon from "./screens/Pokemon";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <Routes>
-      <Route element={<Memotest />} path="/memotest" />
-      <Route element={<Pokemon />} path="/pokemon" />
-      <Route element={<WordsPerMinute />} path="/wpm" />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Memotest />} path="/multiproyect/memotest" />
+        <Route element={<Pokemon />} path="/multiproyect/pokemon" />
+        <Route element={<WordsPerMinute />} path="/multiproyect/wpm" />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
